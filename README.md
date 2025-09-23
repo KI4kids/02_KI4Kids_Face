@@ -232,9 +232,9 @@ mkdir camtest
 cd camtest
 ```
 
+Python
 
-
-```
+```Python
 # camtest.py
 # Video mit der USB-Kamera
 
@@ -369,7 +369,7 @@ git clone https://github.com/KI4kids/face.git ~/person
 
 Python
 
-```
+```Python
 #dlface.py
 
 import os
@@ -421,17 +421,13 @@ print(os.listdir("."))
 os.chdir(os.path.expanduser("~"))
 ```
 
-
-
-
-
-Python
-
 ### Face Detection mit Bilder
 
 Kontrolliere ob sich die Bilder single-person.jpg und group-of-people.jpg in dein Arbeitsverseichnis befinden
 
-```
+Python
+
+```Python
 # facedetect.py
 
 import cv2
@@ -477,7 +473,9 @@ cv2.destroyAllWindows()
 
 ### Face Detection mit der Kamera
 
-```
+Python
+
+```Python
 #camface.py
 
 
@@ -513,9 +511,9 @@ cv2.destroyAllWindows()
 
 ## Mehrfachdetection mit der Kamera
 
+Python
 
-mfdetect.py
-```
+```Python
 #mfdetect.py
 import cv2
 
@@ -921,7 +919,7 @@ for face_location in face_locations:
 
 Python
 
-```
+```Python
 #dlmp4.py
 
 import os
@@ -981,7 +979,9 @@ bash
 pip install ultralytics
 ```
 
-```
+Python
+
+```Python
 # pip install ultralytics
 
 # track.py
@@ -1030,7 +1030,7 @@ cv2.destroyAllWindows()
 
 Python
 
-```
+```Python
 #ob_count.py
 # Zählt Objekte in der queue region
 
@@ -1184,7 +1184,9 @@ git clone https://github.com/KI4kids/face.git
 
 ### Download Bilder
 
-```
+Python
+
+```Python
 #dlpic.py
 
 import os
@@ -1236,10 +1238,10 @@ Im Verzeichnis "face" müssen wir neben den 3 Python-Skripten, die wir für unse
 Als Nächstes erstellen wir die Daten mit "makedata.py". Die Bilder werden im Unterverzeichnis "dataset" gespeichert.
 
 
-makedata.py
+Python
 
 
-```
+```Python
 # makedata.py
 
 import cv2
@@ -1295,10 +1297,10 @@ In dieser Phase müssen wir alle Benutzerdaten aus unserem Datensatz nehmen und 
 Erstellen wir das Trainerprogramm.
 
 
-trainer.py
+Python
 
 
-```
+```Python
 # trainer.py
 
 
@@ -1358,10 +1360,10 @@ Dadurch wird eine Datei mit dem Namen "trainer.yml" in dem Trainerverzeichnis ge
 Nun haben wir die letzte Phase unseres Projekts erreicht. Hier fangen wir ein frisches Gesicht mit unserer Kamera ein, und wenn diese Person ihr Gesicht zuvor erfasst und trainiert hat, macht unser Recognizer eine "Vorhersage", die seine ID und einen Index zurückgibt, der zeigt, wie sicher der Recognizer mit dieser Übereinstimmung ist.
 
 
-detect.py
+Python
 
 
-```
+```Python
 # detector.py
 
 import cv2
